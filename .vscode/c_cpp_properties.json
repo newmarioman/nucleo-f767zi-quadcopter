@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "NUCLEO-F767ZI",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/inc",
+                "${workspaceFolder}/mbed-os/**"
+            ],
+            "defines": ["TARGET_NUCLEO_F767ZI"],
+            "compilerPath": "arm-none-eabi-g++",
+            "intelliSenseMode": "gcc-arm",
+            "cStandard": "c11",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Mbed: build debug",
+            "type": "shell",
+            "command": "mbed",
+            "args": ["compile", "-m", "NUCLEO_F767ZI", "-t", "GCC_ARM", "--profile", "debug"],
+            "group": {"kind": "build", "isDefault": true},
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Mbed: clean build debug",
+            "type": "shell",
+            "command": "mbed",
+            "args": ["compile", "-m", "NUCLEO_F767ZI", "-t", "GCC_ARM", "--profile", "debug", "-c"],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Mbed: build release",
+            "type": "shell",
+            "command": "mbed",
+            "args": ["compile", "-m", "NUCLEO_F767ZI", "-t", "GCC_ARM", "--profile", "release"],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Mbed: clean build release",
+            "type": "shell",
+            "command": "mbed",
+            "args": ["compile", "-m", "NUCLEO_F767ZI", "-t", "GCC_ARM", "--profile", "release", "-c"],
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
